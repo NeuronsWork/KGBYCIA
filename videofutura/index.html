@@ -7,15 +7,10 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Video Futura</title>
 
-        <!-- Bootstrap -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
         <link href="assets/css/vf.css" rel="stylesheet" />
-
-        <!-- Base MasterSlider style sheet -->
         <link href="assets/masterslider/style/masterslider.css" rel="stylesheet"  />
-        <!-- Master Slider Skin -->
         <link href="assets/masterslider/skins/default/style.css" rel="stylesheet" />
-
         <script type='text/javascript' src="assets/js/modernizr.min.js"></script>
         <script type='text/javascript' src="assets/js/css3-mediaqueries.js"></script>
 
@@ -38,19 +33,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand smoothScroll" href="#slider">
                         <img src="assets/img/logo.png" class="img-responsive" alt="Video Futura">
                     </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Somos</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">proyectos</a></li>
-                        <li><a href="#">staff</a></li>
-                        <li><a href="#">clientes</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contacto</a></li>
+                        <li><a href="#nosotros" class="smoothScroll">Somos</a></li>
+                        <li><a href="#servicios" class="smoothScroll">Servicios</a></li>
+                        <li><a href="#proyectos" class="smoothScroll">proyectos</a></li>
+                        <li><a href="#staff" class="smoothScroll">staff</a></li>
+                        <li><a href="#clientes" class="smoothScroll">clientes</a></li>
+                        <li><a href="#" class="smoothScroll">blog</a></li>
+                        <li><a href="#contacto" class="smoothScroll">contacto</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -59,8 +54,8 @@
 
         <!-- SLIDER -->
         <div class="container-fluid" id="slider">
-            <img src="assets/img/slider/slide.jpg" class="img-responsive" alt="">
-            <div class="slider"><!-- your slider container -->
+            <!--<img src="assets/img/slider/slide.jpg" class="img-responsive" alt="">
+            <div class="slider">
                 <div class="slide">
                     <div class="tenor" data-position="400,0" data-special="cycle">
                         <h2 class="text-center">Productora audiovisual / estudio de postproducción</h2>
@@ -73,17 +68,41 @@
                         <h3 class="text-center">El espacio donde hacer realidad tus ideas</h3>
                     </div>
                 </div>
-                <!-- and so on -->
                 <div class="fs_loader"></div>
+            </div> -->
+            <div class="master-slider ms-skin-default" id="masterslider">
+                <!-- new slide -->
+                <div class="ms-slide slide-1" data-delay="14">
+                    <!-- slide background -->
+                    <img src="assets/masterslider/blank.gif" data-src="assets/img/slider/slide.jpg" alt="Slide1 background">
+                    <h2 class="ms-layer hps-title1" style="left: 0px; bottom: 150px;" data-type="text">
+                    Productora audiovisual / estudio de postproducción
+                    </h2>
+                    <h3 class="ms-layer hps-title2" style="left: 0px; bottom: 100px;" data-type="text">
+                    El espacio donde hacer realidad tus ideas
+                    </h3>
+                </div>
+                <!-- end of slide -->
+                <div class="ms-slide slide-2" data-delay="14">
+                    <!-- slide background -->
+                    <img src="assets/masterslider/blank.gif" data-src="assets/img/slider/slide.jpg" alt="Slide1 background">
+                    <h2 class="ms-layer hps-title1" style="left: 0px; bottom: 150px;" data-type="text">
+                    Productora audiovisual / estudio de postproducción
+                    </h2>
+                    <h3 class="ms-layer hps-title2" style="left: 0px; bottom: 100px;" data-type="text">
+                    El espacio donde hacer realidad tus ideas
+                    </h3>
+                </div>
+                <!-- end of slide -->
+                <div class="shadow"></div>
             </div>
-
         </div>
         <!-- /SLIDER -->
 
         <!-- MAIN -->
         <main>
             <!-- NOSOTROS -->
-            <div class="container" id="nosotros">
+            <section class="container" id="nosotros">
                 <div class="row">
                     <div class="col-xs-12 col-sm-5 col-md-5">
                         <h2>nosotros</h2>
@@ -99,10 +118,10 @@
  VIDEOS PARA INTERNET – SERVICIOS AUDIOVISUALES</h4>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- /NOSOTROS -->
             <!-- SERVICIOS -->
-            <div class="container-fluid" id="servicios">
+            <section class="container-fluid" id="servicios">
                 <h2 class="text-center">servicios</h2>
                 <div class="container">
                     <div class="row">
@@ -132,14 +151,44 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- /SERVICIOS -->
-            <!-- TESTIMONIOS -->
-            <div class="container-fluid" id="proyectos">
-                <div class="container">
+            <!-- PROYECTOS -->
+            <section class="container-fluid" id="proyectos">
+                <div class="ms-partialview-template" id="partial-view-1">
+                    <!-- masterslider -->
+                    <div class="master-slider ms-skin-default" id="masterslider1">
+                        <div class="ms-slide">
+                            <img src="assets/masterslider/blank.gif" data-src="assets/img/cover.jpg" alt="lorem ipsum dolor sit"/>
+                            <a href="http://player.vimeo.com/video/53914149" data-type="video"> vimeo video </a>
+                            <div class="ms-info">
+                                <h3>Producido por Video Futura</h3>
+                                <h4>Conducido por Renzo Reggiardo</h4>
+                                <p>Octubre 2013</p>
+                            </div>
+                        </div>
+                        <div class="ms-slide">
+                            <img src="assets/masterslider/blank.gif" data-src="assets/img/cover.jpg" alt="lorem ipsum dolor sit"/>
+                            <a href="http://player.vimeo.com/video/53914149" data-type="video"> vimeo video </a>
+                            <div class="ms-info">
+                                <h3>Producido por Video Futura</h3>
+                                <h4>Conducido por Renzo Reggiardo</h4>
+                                <p>Octubre 2013</p>
+                            </div>
+                        </div>
+                        <div class="ms-slide">
+                            <img src="assets/masterslider/blank.gif" data-src="assets/img/cover.jpg" alt="lorem ipsum dolor sit"/>
+                            <a href="http://player.vimeo.com/video/53914149" data-type="video"> vimeo video </a>
+                            <div class="ms-info">
+                                <h3>Producido por Video Futura</h3>
+                                <h4>Conducido por Renzo Reggiardo</h4>
+                                <p>Octubre 2013</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- /TESTIMONIOS -->
+            </section>
+            <!-- /PROYECTOS -->
         </main>
         <!-- /MAIN -->
 
@@ -149,19 +198,12 @@
         </footer>
         <!-- /FOOTER -->
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/vf.min.js"></script>
-        <script src="assets/js/jquery.fractionslider.min.js"></script>
         <script src="assets/masterslider/jquery.easing.min.js"></script>
         <script src="assets/masterslider/masterslider.min.js"></script>
-
-        <script type="text/javascript">
-            jQuery(window).load(function(){
-                $('.slider').fractionSlider();
-            });
-        </script>
+        <script src="assets/js/jquery.smooth-scroll.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
     </body>
 </html>
