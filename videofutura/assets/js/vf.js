@@ -60,14 +60,14 @@ jQuery(window).load(function(){
      * @type {MasterSlider}
      */
     var slider1 = new MasterSlider();
-    slider1.control('slideinfo',{insertTo:"#partial-view-1" , autohide:false, align:'bottom', size:160});
     slider1.setup('masterslider1' , {
-        width:760,
-        height:400,
-        space:10,
+        width:645,
+        height:350,
+        space:20,
         loop:true,
         view:'fadeWave',
-        layout:'partialview'
+        layout:'partialview',
+        autoplay:true
     });
 });
 

@@ -143,26 +143,35 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 0;
-  padding-top: 220px;
+  padding: 220px 0 40px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  #proyectos #partial-view-1 .ms-partialview-template .ms-slide-info {
-    text-align: center;
-    margin-top: 20px;
-    width: 100%; }
-  #proyectos #partial-view-1 .ms-partialview-template .ms-slide-info .ms-info h3,
-  #proyectos #partial-view-1 .ms-partialview-template .ms-slide-info h4,
-  #proyectos #partial-view-1 .ms-partialview-template .ms-slide-info p,
-  #proyectos #partial-view-1 .ms-layer.video-title,
-  #proyectos #partial-view-1 .ms-layer.video-title.video-top-title,
-  #proyectos #partial-view-1 .ms-layer.video-title.video-sub-title {
+  #proyectos #partial-view-1 #masterslider1 .ms-container {
+    overflow: visible !important; }
+  #proyectos #partial-view-1 .ms-slide .ms-info {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 30px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  #proyectos #partial-view-1 .ms-slide h3, #proyectos #partial-view-1 .ms-slide h4, #proyectos #partial-view-1 .ms-slide p {
+    text-transform: uppercase;
     margin: 5px;
     color: #222;
     font-family: "Oswald", sans-serif;
     font-size: 24px;
     font-weight: 300 !important; }
+  #proyectos #partial-view-1 .ms-sl-selected .ms-info {
+    opacity: 100;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
 
 /** FOOTER */
 /**
