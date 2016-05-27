@@ -90,6 +90,9 @@ jQuery(window).load(function(){
      * SLIDER PRINCIPAL
      * @type {MasterSlider}
      */
+    fi(w > 960){
+        var s = skrollr.init({forceHeight: true});
+    }
     if(w < 480){
         var slider = new MasterSlider();
         slider.setup('masterslider' , {
@@ -104,7 +107,6 @@ jQuery(window).load(function(){
         });
     }
     if(w > 768){
-        var s = skrollr.init({forceHeight: false});
         var slider = new MasterSlider();
         slider.setup('masterslider' , {
             width:1583,    // slider standard width
