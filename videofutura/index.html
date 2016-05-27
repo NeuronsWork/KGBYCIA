@@ -14,6 +14,10 @@
         <script type='text/javascript' src="assets/js/modernizr.min.js"></script>
         <script type='text/javascript' src="assets/js/css3-mediaqueries.js"></script>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="assets/masterslider/jquery.easing.min.js"></script>
+        <script src="assets/masterslider/masterslider.min.js"></script>
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -26,128 +30,122 @@
         <!-- NAVIGATION -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand smoothScroll" href="#slider">
-                        <img src="assets/img/logo.png" class="img-responsive" alt="Video Futura">
-                    </a>
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand smoothScroll" href="#slider">
+                            <img src="assets/img/logo.png" class="img-responsive" alt="Video Futura">
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#nosotros" class="smoothScroll">Somos</a></li>
+                            <li><a href="#servicios" class="smoothScroll">Servicios</a></li>
+                            <li><a href="#proyectos" class="smoothScroll">proyectos</a></li>
+                            <li><a href="#staff" class="smoothScroll">staff</a></li>
+                            <li><a href="#clientes" class="smoothScroll">clientes</a></li>
+                            <li><a href="#" class="smoothScroll">blog</a></li>
+                            <li><a href="#contacto" class="smoothScroll">contacto</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#nosotros" class="smoothScroll">Somos</a></li>
-                        <li><a href="#servicios" class="smoothScroll">Servicios</a></li>
-                        <li><a href="#proyectos" class="smoothScroll">proyectos</a></li>
-                        <li><a href="#staff" class="smoothScroll">staff</a></li>
-                        <li><a href="#clientes" class="smoothScroll">clientes</a></li>
-                        <li><a href="#" class="smoothScroll">blog</a></li>
-                        <li><a href="#contacto" class="smoothScroll">contacto</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
             </div>
         </nav>
         <!-- /NAVIGATION -->
 
-        <!-- SLIDER -->
-        <div class="container-fluid" id="slider">
-            <!--<img src="assets/img/slider/slide.jpg" class="img-responsive" alt="">
-            <div class="slider">
-                <div class="slide">
-                    <div class="tenor" data-position="400,0" data-special="cycle">
-                        <h2 class="text-center">Productora audiovisual / estudio de postproducción</h2>
-                        <h3 class="text-center">El espacio donde hacer realidad tus ideas</h3>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="tenor" data-position="400,0" data-special="cycle">
-                        <h2 class="text-center">Productora audiovisual / estudio de postproducción</h2>
-                        <h3 class="text-center">El espacio donde hacer realidad tus ideas</h3>
-                    </div>
-                </div>
-                <div class="fs_loader"></div>
-            </div> -->
-            <div class="master-slider ms-skin-default" id="masterslider">
-                <!-- new slide -->
-                <div class="ms-slide slide-1" data-delay="14">
-                    <!-- slide background -->
-                    <img src="assets/masterslider/blank.gif" data-src="assets/img/slider/slide.jpg" alt="Slide1 background">
-                    <h2 class="ms-layer hps-title1" style="left: 0px; bottom: 150px;" data-type="text">
-                    Productora audiovisual / estudio de postproducción
-                    </h2>
-                    <h3 class="ms-layer hps-title2" style="left: 0px; bottom: 100px;" data-type="text">
-                    El espacio donde hacer realidad tus ideas
-                    </h3>
-                </div>
-                <!-- end of slide -->
-                <div class="ms-slide slide-2" data-delay="14">
-                    <!-- slide background -->
-                    <img src="assets/masterslider/blank.gif" data-src="assets/img/slider/slide.jpg" alt="Slide1 background">
-                    <h2 class="ms-layer hps-title1" style="left: 0px; bottom: 150px;" data-type="text">
-                    Productora audiovisual / estudio de postproducción
-                    </h2>
-                    <h3 class="ms-layer hps-title2" style="left: 0px; bottom: 100px;" data-type="text">
-                    El espacio donde hacer realidad tus ideas
-                    </h3>
-                </div>
-                <!-- end of slide -->
-                <div class="shadow"></div>
-            </div>
-        </div>
-        <!-- /SLIDER -->
 
         <!-- MAIN -->
         <main>
+            <!-- SLIDER -->
+            <section class="container-fluid" id="slider">
+                <div class="master-slider ms-skin-default" id="masterslider">
+                    <!-- new slide -->
+                    <div class="ms-slide slide-1" data-delay="14">
+                        <!-- slide background -->
+                        <img src="assets/masterslider/blank.gif" data-src="assets/img/slider/slide.jpg" alt="Slide1 background">
+                        <h2 class="ms-layer hps-title1" style="left: 0px; bottom: 150px;" data-type="text">
+                        Productora audiovisual / estudio de postproducción
+                        </h2>
+                        <h3 class="ms-layer hps-title2" style="left: 0px; bottom: 100px;" data-type="text">
+                        El espacio donde hacer realidad tus ideas
+                        </h3>
+                    </div>
+                    <!-- end of slide -->
+                    <div class="ms-slide slide-2" data-delay="14">
+                        <!-- slide background -->
+                        <img src="assets/masterslider/blank.gif" data-src="assets/img/slider/slide.jpg" alt="Slide1 background">
+                        <h2 class="ms-layer hps-title1" style="left: 0px; bottom: 150px;" data-type="text">
+                        Productora audiovisual / estudio de postproducción
+                        </h2>
+                        <h3 class="ms-layer hps-title2" style="left: 0px; bottom: 100px;" data-type="text">
+                        El espacio donde hacer realidad tus ideas
+                        </h3>
+                    </div>
+                    <!-- end of slide -->
+                    <div class="shadow"></div>
+                </div>
+            </section>
+            <!-- /SLIDER -->
             <!-- NOSOTROS -->
             <section class="container" id="nosotros">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-5 col-md-5">
-                        <h2>nosotros</h2>
-                        <p>Somos una empresa especializada en comunicación integral, estamos dedicados a la producción y realización audiovisual teniendo como eje central la innovación, los contenidos creativos y las herramientas que hoy en día nos ofrece la tecnología.</p>
-                        <p>La nuestra es una propuesta sencilla, directa, efectiva y eficaz que busca traducir los requerimientos de nuestros clientes en propuestas que recojan sus ideas y las transformen en mensajes claros y precisos.</p>
-                        <p>Contamos con equipos de grabación de última generación (FULL HD), que garantizan un producto de altísima calidad y acorde con los estándares internacionales.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="skroll-div" data-anchor-target="#slider" data-0="right: 100%" data-750="right: 0%">
+                            <h2>nosotros</h2>
+                            <p>Somos una empresa especializada en comunicación integral, estamos dedicados a la producción y realización audiovisual teniendo como eje central la innovación, los contenidos creativos y las herramientas que hoy en día nos ofrece la tecnología.</p>
+                            <p>La nuestra es una propuesta sencilla, directa, efectiva y eficaz que busca traducir los requerimientos de nuestros clientes en propuestas que recojan sus ideas y las transformen en mensajes claros y precisos.</p>
+                            <p>Contamos con equipos de grabación de última generación (FULL HD), que garantizan un producto de altísima calidad y acorde con los estándares internacionales.</p>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-7 col-md-7">
-                        <img src="assets/img/nosotros.jpg" alt="" class="img-responsive">
+                    <div class="col-xs-12 col-sm-7 col-md-offset-1 col-md-5 hidden-sm hidden-xs" >
+                        <div class="skroll-div" data-0="left:100%" data-750="left:0%;">
+                            <img src="assets/img/nosotros.jpg" alt="" class="img-responsive">
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h4 class="text-center">VIDEOS CORPORATIVOS – VIDEOS PROMOCIONALES – VIDEOS PARA EMPRESAS – VIDEOS ANIMADOS<br>
- VIDEOS PARA INTERNET – SERVICIOS AUDIOVISUALES</h4>
+                    <div class="col-xs-12 col-sm-12 col-md-12" style="bottom: -340px;">
+                        <div class="skroll-div" data-0="right:100%" data-750="right:0%;" >
+                            <h4 class="text-center">VIDEOS CORPORATIVOS – VIDEOS PROMOCIONALES – VIDEOS PARA EMPRESAS – VIDEOS ANIMADOS<br>
+                            VIDEOS PARA INTERNET – SERVICIOS AUDIOVISUALES</h4>
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- /NOSOTROS -->
             <!-- SERVICIOS -->
             <section class="container-fluid" id="servicios">
-                <h2 class="text-center">servicios</h2>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-4 item">
-                            <img src="assets/img/servicio1.jpg" alt="" class="img-responsive">
-                            <h3 class="text-center">PROGRAMAS DE TV</h3>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 item">
-                            <img src="assets/img/servicio2.jpg" alt="" class="img-responsive">
-                            <h3 class="text-center">PROGRAMAS DE TV</h3>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 item">
-                            <img src="assets/img/servicio3.jpg" alt="" class="img-responsive">
-                            <h3 class="text-center">PROGRAMAS DE TV</h3>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 item">
-                            <img src="assets/img/servicio1.jpg" alt="" class="img-responsive">
-                            <h3 class="text-center">PROGRAMAS DE TV</h3>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 item">
-                            <img src="assets/img/servicio2.jpg" alt="" class="img-responsive">
-                            <h3 class="text-center">PROGRAMAS DE TV</h3>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 item">
-                            <img src="assets/img/servicio3.jpg" alt="" class="img-responsive">
-                            <h3 class="text-center">PROGRAMAS DE TV</h3>
+                    <h2 class="text-center skroll-div" data-anchor-target="#nosotros" data-0="right: 100%" data-768="right: 100%" data-1300="right: 0%">servicios</h2>
+                    <div class="row" style="margin-top: 90px;">
+                        <div class="skroll-div" data-anchor-target="#nosotros" data-0="left: 100%" data-768="left: 100%" data-1300="left: 0%">
+                            <div class="col-xs-6 col-sm-4 col-md-4 item">
+                                <img src="assets/img/servicio1.jpg" alt="" class="img-responsive">
+                                <h3 class="text-center">PROGRAMAS DE TV</h3>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-4 item">
+                                <img src="assets/img/servicio2.jpg" alt="" class="img-responsive">
+                                <h3 class="text-center">PROGRAMAS DE TV</h3>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-4 item">
+                                <img src="assets/img/servicio3.jpg" alt="" class="img-responsive">
+                                <h3 class="text-center">PROGRAMAS DE TV</h3>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-4 item">
+                                <img src="assets/img/servicio1.jpg" alt="" class="img-responsive">
+                                <h3 class="text-center">PROGRAMAS DE TV</h3>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-4 item">
+                                <img src="assets/img/servicio2.jpg" alt="" class="img-responsive">
+                                <h3 class="text-center">PROGRAMAS DE TV</h3>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-4 item">
+                                <img src="assets/img/servicio3.jpg" alt="" class="img-responsive">
+                                <h3 class="text-center">PROGRAMAS DE TV</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,35 +153,37 @@
             <!-- /SERVICIOS -->
             <!-- PROYECTOS -->
             <section class="container-fluid" id="proyectos">
-                <h2 class="text-center">PROYECTOS</h2>
-                <div class="ms-partialview-template" id="partial-view-1">
-                    <!-- masterslider -->
-                    <div class="master-slider ms-skin-default" id="masterslider1">
-                        <div class="ms-slide">
-                            <img src="assets/masterslider/blank.gif" data-src="assets/img/cover.jpg" alt="lorem ipsum dolor sit"/>
-                            <a href="http://player.vimeo.com/video/53914149" data-type="video"> vimeo video </a>
-                            <div class="ms-info">
-                                <h3>Producido por Video Futura</h3>
-                                <h4>Conducido por Renzo Reggiardo</h4>
-                                <p>Octubre 2013</p>
+                <h2 class="text-center skroll-div" data-anchor-target="#servicios" data-0="right: 100%" data-768="right: 100%" data-1300="right: 100%" data-2400="right: 0%">PROYECTOS</h2>
+                <div style="margin-top: 90px;" class="skroll-div" data-anchor-target="#servicios" data-0="left: 100%" data-768="left: 100%" data-1300="left: 100%" data-2400="left: 0%">
+                    <div class="ms-partialview-template" id="partial-view-1">
+                        <!-- masterslider -->
+                        <div class="master-slider ms-skin-default" id="masterslider1">
+                            <div class="ms-slide">
+                                <img src="assets/masterslider/blank.gif" data-src="assets/img/cover.jpg" alt="lorem ipsum dolor sit"/>
+                                <a href="http://player.vimeo.com/video/53914149" data-type="video"> vimeo video </a>
+                                <div class="ms-info">
+                                    <h3>Producido por Video Futura</h3>
+                                    <h4>Conducido por Renzo Reggiardo</h4>
+                                    <p>Octubre 2013</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="ms-slide">
-                            <img src="assets/masterslider/blank.gif" data-src="assets/img/cover.jpg" alt="lorem ipsum dolor sit"/>
-                            <a href="http://player.vimeo.com/video/53914149" data-type="video"> vimeo video </a>
-                            <div class="ms-info">
-                                <h3>Producido por Video Futura</h3>
-                                <h4>Conducido por Renzo Reggiardo</h4>
-                                <p>Octubre 2013</p>
+                            <div class="ms-slide">
+                                <img src="assets/masterslider/blank.gif" data-src="assets/img/cover.jpg" alt="lorem ipsum dolor sit"/>
+                                <a href="http://player.vimeo.com/video/53914149" data-type="video"> vimeo video </a>
+                                <div class="ms-info">
+                                    <h3>Producido por Video Futura</h3>
+                                    <h4>Conducido por Renzo Reggiardo</h4>
+                                    <p>Octubre 2013</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="ms-slide">
-                            <img src="assets/masterslider/blank.gif" data-src="assets/img/cover.jpg" alt="lorem ipsum dolor sit"/>
-                            <a href="http://player.vimeo.com/video/53914149" data-type="video"> vimeo video </a>
-                            <div class="ms-info">
-                                <h3>Producido por Video Futura</h3>
-                                <h4>Conducido por Renzo Reggiardo</h4>
-                                <p>Octubre 2013</p>
+                            <div class="ms-slide">
+                                <img src="assets/masterslider/blank.gif" data-src="assets/img/cover.jpg" alt="lorem ipsum dolor sit"/>
+                                <a href="http://player.vimeo.com/video/53914149" data-type="video"> vimeo video </a>
+                                <div class="ms-info">
+                                    <h3>Producido por Video Futura</h3>
+                                    <h4>Conducido por Renzo Reggiardo</h4>
+                                    <p>Octubre 2013</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -192,33 +192,36 @@
             <!-- /PROYECTOS -->
             <!-- STAFF -->
             <section class="container-fluid" id="staff">
-                <h2 class="text-center">nuestro STAFF</h2>
                 <div class="container">
-                    <div class="row">
+                    <h2 class="text-center skroll-div" data-anchor-target="#proyectos" data-0="right: 100%" data-768="right: 100%" data-1300="right: 100%" data-2400="right: 100%" data-3200="right: 0%;">nuestro STAFF</h2>
+                    <div class="col-md-offset-1 col-md-10">
                         <div class="col-xs-12 col-sm-12 col-md-7">
-                            <div class="info">
-                                <img src="assets/img/nuestro-staff.jpg" alt="" class="img-responsive img-center">
-                                <h2 class="text-center">EQUIPO DE VIDEO FUTURA</h2>
-                            </div>
-                            <div class="redes col-md-12">
-                                <h3>siguenos</h3>
-                                <p>
-                                    <a href="#" class="red"></a>
-                                    <a href="#" class="red"></a>
-                                    <a href="#" class="red"></a>
-                                </p>
+                            <div class="skroll-div" style="margin-right: 15px; margin-top: 90px;" data-anchor-target="#proyectos" data-0="right: 100%" data-768="right: 100%" data-1300="right: 100%" data-2400="right: 100%" data-3200="right: 0%;">
+                                <div class="info">
+                                    <img src="assets/img/nuestro-staff.jpg" alt="" class="img-responsive img-center">
+                                    <h2 class="text-center">EQUIPO DE VIDEO FUTURA</h2>
+                                </div>
+                                <div class="redes col-md-12">
+                                    <h3>siguenos</h3>
+                                    <p>
+                                        <a href="https://www.facebook.com/Video-Futura-Per%C3%BA-121713084519380/?fref=nf"><img src="assets/img/facebook.svg" alt="" class="img-responsive"></a>
+                                        <a href="https://twitter.com/videofutura"><img src="assets/img/twitter.svg" alt="" class="img-responsive"></a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-5">
-                            <div class="info1">
-                                <div class="img">
-                                    <h3>valia barak</h3>
-                                    <img src="assets/img/periodista.jpg" alt="" class="img-responsive pull-right">
+                            <div class="skroll-div" style="margin-left: 15px; margin-top: 90px;" data-anchor-target="#proyectos" data-0="left: 100%" data-768="left: 100%" data-1300="left: 100%" data-2400="left: 100%" data-3200="left: 0%;">
+                                <div class="info1">
+                                    <div class="img">
+                                        <h3>valia barak</h3>
+                                        <img src="assets/img/periodista.jpg" alt="" class="img-responsive pull-right">
+                                    </div>
+                                    <h2 class="text-center row">Periodista Y Consultora<br>En Comunicación</h2>
                                 </div>
-                                <h2 class="text-center row">Periodista Y Consultora<br>En Comunicación</h2>
-                            </div>
-                            <div class="info1 tw">
-                                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/willaxtv" data-widget-id="735811176492326912">Tweets por el @willaxtv.</a>
+                                <div class="info1 tw">
+                                    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/valiabarak" data-widget-id="735811176492326912">Tweets por el @valiabarak.</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -228,44 +231,48 @@
             <!-- CLIENTES -->
             <section class="container-fluid" id="clientes">
                 <div class="content">
-                    <h2>clientes</h2>
-                    <div class="col-xs-3 col-sm-3 col-md-2">
-                        <img src="assets/img/clientes.jpg" alt="" class="img-responsive">
+                    <h2 class="text-center skroll-div" data-anchor-target="#staff" data-0="right: 100%" data-768="right: 100%" data-1300="right: 100%" data-2400="right: 100%" data-3100="right: 100%;" data-4500="right: 0%;">clientes</h2>
+                    <div class="col-md-2">
+                        <div class="skroll-div" style="margin-right: 15px; margin-top: 90px;" data-anchor-target="#staff" data-0="right: 100%" data-768="right: 100%" data-1300="right: 100%" data-2400="right: 100%" data-3100="right: 100%;" data-4500="right: 0%;">
+                            <img src="assets/img/clientes.jpg" alt="" class="img-responsive hidden-xs hidden-sm">
+                        </div>
                     </div>
-                    <div class="col-xs-10 col-sm-10 col-md-10">
+                    <div class="col-xs-12 col-sm-12 col-md-10">
                         <div class="row">
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli1.jpg" alt="" class="img-responsive img-center"></div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli2.jpg" alt="" class="img-responsive img-center"></div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli3.jpg" alt="" class="img-responsive img-center"></div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli4.jpg" alt="" class="img-responsive img-center"></div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli5.jpg" alt="" class="img-responsive img-center"></div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli6.jpg" alt="" class="img-responsive img-center"></div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli7.jpg" alt="" class="img-responsive img-center"></div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli8.jpg" alt="" class="img-responsive img-center"></div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli9.jpg" alt="" class="img-responsive img-center"></div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli10.jpg" alt="" class="img-responsive img-center"></div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="row"><img src="assets/img/cli11.jpg" alt="" class="img-responsive img-center"></div>
+                            <div class="skroll-div" style="margin-left: 15px; margin-top: 90px;" data-anchor-target="#staff" data-0="left: 100%" data-768="left: 100%" data-1300="left: 100%" data-2400="left: 100%" data-3100="left: 100%;" data-4500="left: 0%;">
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli1.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli2.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli3.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli4.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli5.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli6.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli7.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli8.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli9.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli10.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-2">
+                                    <div class="row"><img src="assets/img/cli11.jpg" alt="" class="img-responsive img-center"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -275,29 +282,33 @@
             <section class="container-fluid" id="contacto">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-xs-12 col-md-5 text-center info">
-                            <p>(51) 991-888-704</p>
-                            <p>Pasaje Mártir Olaya 169, Of. 904<br> Miraflores, Lima – Perú</p>
-                            <p>info@videofutura.pe</p>
+                        <div class="col-sm-12 col-xs-12  col-md-offset-1 col-md-4 text-center info">
+                            <div class="skroll-div" data-anchor-target="#clientes" data-0="right: 100%" data-768="right: 100%" data-1300="right: 100%" data-2400="right: 100%" data-3100="right: 100%;" data-4500="right: 1000%;" data-5200="right: 0%;">
+                                <p>(51) 991-888-704</p>
+                                <p>Pasaje Mártir Olaya 169, Of. 904<br> Miraflores, Lima – Perú</p>
+                                <p>info@videofutura.pe</p>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-xs-12 col-md-7">
-                            <form action="index_submit" method="get" accept-charset="utf-8">
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                    <input type="" name="name" class="form-control" placeholder="name">
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                    <input type="" name="email" class="form-control" placeholder="email">
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                    <input type="" name="subject" class="form-control" placeholder="subject">
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <textarea name="message" class="form-control" placeholder="message" rows="8"></textarea>
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <button type="submit" class="btn">SEND</button>
-                                </div>
-                            </form>
+                        <div class="col-sm-12 col-xs-12 col-md-6">
+                            <div class="skroll-div" data-anchor-target="#clientes" data-0="left: 100%" data-768="left: 100%" data-1300="left: 100%" data-2400="left: 100%" data-3100="left: 100%;" data-4500="left: 1000%;" data-5200="left: 0%;">
+                                <form action="index_submit" method="get" accept-charset="utf-8">
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <input type="" name="name" class="form-control" placeholder="Nombres">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <input type="" name="email" class="form-control" placeholder="Correo electrónico">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <input type="" name="subject" class="form-control" placeholder="Asunto">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <textarea name="message" class="form-control" placeholder="Mensaje" rows="8"></textarea>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="btn">enviar</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -305,13 +316,11 @@
         </main>
         <!-- /MAIN -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/vf.min.js"></script>
-        <script src="assets/masterslider/jquery.easing.min.js"></script>
-        <script src="assets/masterslider/masterslider.min.js"></script>
         <script src="assets/js/jquery.smooth-scroll.min.js"></script>
         <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/skrollr.min.js"></script>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </body>
 </html>
