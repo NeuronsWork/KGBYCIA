@@ -11,6 +11,9 @@
   src: url("../../assets/fonts/FUTURANORMAL.woff2") format("woff2"), url("../../assets/fonts/FUTURANORMAL.woff") format("woff"), url("../../assets/fonts/FUTURANORMAL.ttf") format("truetype"); }
 /** MIXINS */
 /** GLOBALES */
+html, body {
+  overflow-x: hidden; }
+
 main {
   position: relative;
   width: 100%;
@@ -60,31 +63,33 @@ nav {
   height: 100%;
   background: #fff;
   z-index: 9; }
-  #slider #masterslider .shadow {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 145px;
-    background: url("../../assets/img/slider/slider-bg.png") repeat-x center bottom; }
-  #slider #masterslider .ms-slide {
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center; }
-    #slider #masterslider .ms-slide .hps-title1 {
+  #slider #masterslider {
+    overflow-x: hidden; }
+    #slider #masterslider .shadow {
+      position: absolute;
+      bottom: 0;
+      left: 0;
       width: 100%;
-      margin-bottom: 0;
-      font-size: 2.2vw !important;
-      font-family: "Oswald", sans-serif;
-      font-size: 37px;
-      font-weight: 400 !important; }
-    #slider #masterslider .ms-slide .hps-title2 {
-      width: 100%;
-      margin-top: 10px;
-      font-size: 1.85vw !important;
-      font-family: "Oswald", sans-serif;
-      font-size: 31px;
-      font-weight: 400 !important; }
+      height: 145px;
+      background: url("../../assets/img/slider/slider-bg.png") repeat-x center bottom; }
+    #slider #masterslider .ms-slide {
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center; }
+      #slider #masterslider .ms-slide .hps-title1 {
+        width: 100%;
+        margin-bottom: 0;
+        font-size: 2.2vw !important;
+        font-family: "Oswald", sans-serif;
+        font-size: 37px;
+        font-weight: 400 !important; }
+      #slider #masterslider .ms-slide .hps-title2 {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 1.85vw !important;
+        font-family: "Oswald", sans-serif;
+        font-size: 31px;
+        font-weight: 400 !important; }
 
 /**
 ****** NOSOTROS ******
@@ -349,10 +354,6 @@ nav {
     font-size: 13px;
     font-weight: 600 !important; }
 
-/** FOOTER */
-/**
-****** NOSOTROS ******
-*/
 /**
 ****** MODAL ******
 */
