@@ -63,7 +63,7 @@ jQuery(window).load(function(){
     slider1.setup('masterslider1' , {
         width:645,
         height:350,
-        space:20,
+        space:40,
         loop:true,
         view:'fadeWave',
         layout:'partialview',
