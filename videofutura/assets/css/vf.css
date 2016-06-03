@@ -279,8 +279,7 @@ nav {
     font-family: "Oswald", sans-serif;
     font-size: 44px;
     font-weight: 300 !important; }
-  #proyectos #partial-view-1 #master
-  r1 .ms-container {
+  #proyectos #partial-view-1 #masterslider1 .ms-container {
     overflow: visible !important;
     padding-bottom: 120px; }
   #proyectos #partial-view-1 .ms-slide {
@@ -550,7 +549,56 @@ nav {
    */
   position: static; }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1200px) {
+  nav .navbar-header .navbar-brand {
+    padding-left: 15px; }
+    nav .navbar-header .navbar-brand img {
+      width: 90%; }
+
+  .info1 h3 {
+    font-size: 31px !important;
+    width: 100%;
+    left: 0 !important;
+    padding: 20px 0 !important;
+    text-align: center; }
+  .info1 h2 {
+    text-align: center;
+    font-size: 22px;
+    padding: 0;
+    margin: 20px 0 0; }
+
+  .hps-title1 {
+    bottom: 120px !important;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px !important;
+    font-weight: 400 !important; }
+    .hps-title1 span {
+      font-family: "Oswald", sans-serif;
+      font-size: 20px !important;
+      font-weight: 400 !important; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  nav #navbar ul {
+    margin-top: 10px; }
+
+  nav #navbar li:before {
+    font-size: 19px; }
+
+  nav #navbar li:before {
+    top: calc(50% - 13px);
+    left: -3px; }
+
+  nav #navbar a {
+    font-size: 19px;
+    padding: 10px; }
+
+  nav #navbar .scrollMenu {
+    margin-right: 0px; }
+
+  nav .navbar-header .navbar-brand {
+    padding-left: 15px; }
+    nav .navbar-header .navbar-brand img {
+      width: 90%; }
+
   .info1 h3 {
     font-size: 31px !important;
     width: 100%;
@@ -573,6 +621,13 @@ nav {
       font-size: 20px !important;
       font-weight: 400 !important; } }
 @media (max-width: 767px) {
+  nav #navbar .scrollMenu {
+    margin-right: 0px;
+    margin-right: -15px;
+    box-shadow: none; }
+    nav #navbar .scrollMenu li {
+      background-color: transparent; }
+
   .navbar-brand, .scrollBrand {
     padding-left: 20px !important; }
 
