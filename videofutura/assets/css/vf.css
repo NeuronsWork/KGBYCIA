@@ -172,7 +172,7 @@ nav {
 ****** SERVICIOS ******
 */
 #servicios {
-  padding: 200px 0 20px;
+  padding: 160px 0 20px;
   background: #c2b807;
   min-height: 960px;
   overflow: hidden; }
@@ -268,7 +268,7 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 220px 0 40px;
+  padding: 160px 0 40px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -317,7 +317,7 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 220px 0 40px;
+  padding: 160px 0 40px;
   min-height: 1370px; }
   #staff h2 {
     color: #231f20;
