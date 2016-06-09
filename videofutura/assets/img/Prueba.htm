@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:9000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Prueba</title>
+        <link rel="stylesheet" href="./Prueba_files/bootstrap.min.css">
+    <style type="text/css"></style></head>
+    <body data-pinterest-extension-installed="cr1.39.1">
+
+        <div class="container">
+            <div class="row">
+                <div class="page-header">
+                    <h1>Chat</h1>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <ul id="mensajes"></ul>
+                    <div class="row navbar-fixed-bottom">
+                        <form action="http://localhost:9000/" class="col-md-12">
+                            <div class="form-group col-md-8">
+                                <input type="text" class="form-control letras" name="msg" id="msg" placeholder="ingresar mensaje" autocomplete="off" required="">
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-success" type="">Enviar Mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <output id="list"></output>
+                </div>
+            </div>
+        </div>
+        <script src="./Prueba_files/jquery.min.js"></script>
+        <script src="./Prueba_files/bootstrap.min.js"></script>
+        <script src="./Prueba_files/socket.io.js"></script>
+        <script>
+            var socket = io();
+            $('form').submit(function(){
+                socket.emit('chat mensaje', $('#msg').val());
+                $('#msg').val('');
+                return false;
+            });
+            socket.on('chat message', function(msg){
+                $('#mensajes').appendTo($('<li>').text(msg));
+            });
+
+        </script>
+    
+<div id="viewPortSize" class="bottom_right" style="color: rgb(255, 255, 255); font-size: 12px; display: block; background-color: rgb(0, 0, 0);">Inner: 967 x 547<br>Outer: 967 x 1050</div></body></html>

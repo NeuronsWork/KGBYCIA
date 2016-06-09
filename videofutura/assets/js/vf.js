@@ -98,6 +98,11 @@ $(function(){
 
 jQuery(window).load(function(){
 
+    $('a#back-to-top').click(function() {
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+
     var stickyNavTop = $('.navbar-nav').offset().top;
 
     var stickyNav = function(){
