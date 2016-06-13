@@ -69,47 +69,49 @@ nav {
   border-color: transparent !important;
   z-index: 9999; }
   nav .navbar-header .navbar-brand {
-    padding: 0 0 0 220px;
+    padding: 0 0 0 100px;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease; }
   nav .navbar-header .scrollBrand {
     padding: 0 0 0 100px; }
-  nav #navbar ul {
-    margin-top: 40px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-  nav #navbar li:before {
-    content: "/";
-    position: absolute;
-    left: 0;
-    top: calc(50% - 17px);
-    color: #fff;
-    font-family: "Oswald", sans-serif;
-    font-size: 24px;
-    font-weight: 400; }
-  nav #navbar li:first-child:before {
-    content: ""; }
-  nav #navbar a {
-    color: #fff;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    font-size: 24px;
-    font-weight: 400; }
-  nav #navbar .scrollMenu {
-    margin-right: 120px;
-    margin-top: 0;
-    -webkit-box-shadow: 0px 9px 17px -6px rgba(0, 0, 0, 0.34);
-    -moz-box-shadow: 0px 9px 17px -6px rgba(0, 0, 0, 0.34);
-    box-shadow: 0px 9px 17px -6px rgba(0, 0, 0, 0.34); }
-    nav #navbar .scrollMenu li {
-      background-color: #fff; }
-      nav #navbar .scrollMenu li a, nav #navbar .scrollMenu li:before {
-        color: #21262a; }
+  nav #navbar {
+    padding-right: 100px; }
+    nav #navbar ul {
+      margin-top: 40px;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+    nav #navbar li:before {
+      content: "/";
+      position: absolute;
+      left: 0;
+      top: calc(50% - 17px);
+      color: #fff;
+      font-family: "Oswald", sans-serif;
+      font-size: 24px;
+      font-weight: 400; }
+    nav #navbar li:first-child:before {
+      content: ""; }
+    nav #navbar a {
+      color: #fff;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-family: "Oswald", sans-serif;
+      font-size: 24px;
+      font-weight: 400; }
+    nav #navbar .scrollMenu {
+      margin-right: 0px;
+      margin-top: 60;
+      -webkit-box-shadow: 0px 9px 17px -6px rgba(0, 0, 0, 0.34);
+      -moz-box-shadow: 0px 9px 17px -6px rgba(0, 0, 0, 0.34);
+      box-shadow: 0px 9px 17px -6px rgba(0, 0, 0, 0.34); }
+      nav #navbar .scrollMenu li {
+        background-color: #f2af00; }
+        nav #navbar .scrollMenu li a, nav #navbar .scrollMenu li:before {
+          color: #21262a; }
 
 .navbar-default .navbar-toggle {
   border: 0px;
@@ -574,6 +576,9 @@ nav {
     nav .navbar-header .navbar-brand img {
       width: 90%; }
 
+  nav #navbar {
+    padding-right: 0; }
+
   .info1 h3 {
     font-size: 31px !important;
     width: 100%;
@@ -647,6 +652,9 @@ nav {
     nav #navbar .scrollMenu li {
       background-color: transparent; }
 
+  nav #navbar {
+    padding-right: 20px; }
+
   .navbar-brand, .scrollBrand {
     padding-left: 20px !important; }
 
@@ -665,7 +673,7 @@ nav {
       .navbar-nav li a {
         text-align: right;
         float: right;
-        background-color: #000;
+        background-color: #f2af00;
         font-size: 14px !important;
         padding: 0 10px !important; }
         .navbar-nav li a:hover, .navbar-nav li a:focus {
@@ -681,7 +689,7 @@ nav {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0); }
 
   .scrollMenu li a {
-    color: #fff !important; }
+    color: #21262a !important; }
 
   .hps-title1 {
     bottom: 120px !important;
